@@ -1,0 +1,15 @@
+<div class="contenedor-historial">
+  <h2>Historial de Partidas</h2>
+
+  @if (listaDePartidas.length === 0) {
+    <p class="mensaje-vacio">Todavía no jugaste ninguna partida.</p>
+  } @else {
+    @for (partida of listaDePartidas; track $index) {
+      <div class="tarjeta-partida">
+        <h3>Mapa: {{ partida.mapa }}</h3>
+        <p><strong>Resultado:</strong> {{ partida.resultado }}</p>
+        <p><strong>KDA:</strong> {{ partida.bajas }} / {{ partida.muertes }}</p>
+      </div>
+    }
+  }
+</div>

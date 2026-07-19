@@ -1,0 +1,34 @@
+<div class="contenedor-formulario">
+    <h2>Cargar Nueva Partida</h2>
+
+    <form [formGroup]="formularioPartida" (ngSubmit)="guardar()">
+
+        <div class="grupo-input">
+            <label>Mapa:</label><br>
+            <input type="text" formControlName="mapa" placeholder="Ej: Bind, Ascent...">
+        </div>
+
+        <div class="grupo-input">
+            <label>Resultado:</label><br>
+            <select formControlName="resultado">
+                <option value="">Seleccionar...</option>
+                <option value="Victoria">Victoria</option>
+                <option value="Derrota">Derrota</option>
+            </select>
+        </div>
+
+        <div class="grupo-input">
+            <label>Bajas:</label><br>
+            <input type="number" formControlName="bajas">
+        </div>
+
+        <div class="grupo-input">
+            <label>Muertes:</label><br>
+            <input type="number" formControlName="muertes">
+        </div>
+
+        <button type="submit" [disabled]="formularioPartida.invalid" class="btn-guardar">
+            Guardar Partida
+        </button>
+    </form>
+</div>

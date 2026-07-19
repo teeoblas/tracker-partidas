@@ -1,0 +1,19 @@
+.contenedor-formulario {
+    max-width: 400px;
+    padding: 20px;
+}
+
+.grupo-input {
+    margin-bottom: 10px;
+}
+
+.btn-guardar {
+    padding: 10px;
+    cursor: pointer;
+
+    /* Un pequeño extra: si el botón está deshabilitado, se pone gris */
+    &:disabled {
+        cursor: not-allowed;
+        opacity: 0.6;
+    }
+}
