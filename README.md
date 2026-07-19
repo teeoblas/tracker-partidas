@@ -1,59 +1,18 @@
-# TrackerPartidas
+# Tracker de Partidas - Valorant
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.19.
+## 🎮 Descripción del Proyecto
+Esta es una aplicación web SPA (Single Page Application) desarrollada en Angular. Su objetivo principal es llevar un registro detallado e historial de las partidas jugadas en el videojuego Valorant. 
 
-## Development server
+El sistema permite a los usuarios registrar el rendimiento de cada partida ingresando datos clave como el mapa jugado, el resultado final y las estadísticas de KDA (Bajas y Muertes). La aplicación utiliza herramientas core de Angular como Formularios Reactivos para la validación de los datos ingresados, Servicios para centralizar y compartir la información entre las distintas vistas, y un sistema de enrutamiento interno.
 
-To start a local development server, run:
+## 📍 Rutas de la Aplicación
+El sistema de navegación de la aplicación (Routing) cuenta con los siguientes paths:
 
-```bash
-ng serve
-```
+* **`/historial`:** Es la pantalla principal donde se renderiza el componente que lista todas las partidas cargadas previamente a través del servicio. Muestra las tarjetas individuales con el resumen de cada partida.
+* **`/cargar`:** Ruta que renderiza el formulario reactivo. Contiene las validaciones necesarias para ingresar un nuevo registro (Mapa, Resultado, Bajas, Muertes) y agregarlo al historial.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## 👨‍💻 Datos del Estudiante
+* **Nombre y Apellido:** Teo Iván Blas García
+* **DNI:** 45865992
+* **Email:** teoblas71@gmail.com
+* **Sede:** Tandil 
